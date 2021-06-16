@@ -13,7 +13,7 @@ public class Main {
 		Home h2=Home.getInstHome();
 		System.out.println(h1.equals(h2));
 		
-		
+		System.out.println(h1.equals(h2));
 	}
 	
 }
