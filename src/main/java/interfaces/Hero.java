@@ -8,6 +8,7 @@ public interface Hero {
     String full_name(String name);
     default void emp() {
     	String colg_name = "abc";
+    	int a=10;
     	System.out.println(colg_name);
     }
     static void happy() {
