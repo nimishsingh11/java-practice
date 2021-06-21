@@ -1,4 +1,4 @@
-package Udemy;
+package udemy;
 
 public class Pc {
 private Case theCase;

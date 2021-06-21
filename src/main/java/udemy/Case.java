@@ -1,4 +1,4 @@
-package Udemy;
+package udemy;
 
 public class Case {
 private String model;
