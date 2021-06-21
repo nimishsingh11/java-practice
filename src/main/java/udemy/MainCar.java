@@ -8,16 +8,17 @@ public static void main(String[] args) {
 	//System.out.println(a.startEngine());
 //	System.out.println(a.getNoCylinders());
 	
-	int no=1;
+	int no=2;
 	switch(no) {
 	case 1:
 		c=new Alto();
 		//break;
 	case 2: 
-		c=new Audi();
+		c=new Audi(1,"Abc",5);
 		//break;
 	}
-	System.out.println(c.startEngine());
-	System.out.println(c.getNoCylinders());
+	c.startEngine();
+//	System.out.println(c.getNoCylinders());
+	System.out.println(((Audi) c).getNoOfSeats());
 }
 }

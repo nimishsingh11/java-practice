@@ -1,10 +1,10 @@
 package udemy;
 
 public class Car {
-boolean engine=true;
-int noCylinders;
-String cylindername;
-int wheels=4;
+private boolean engine=true;
+private int noCylinders;
+private String cylindername;
+private int wheels=4;
 
 
 Car(int noCylinders,String cylindername){
@@ -20,9 +20,9 @@ public int getNoCylinders() {
 public String getCylindername() {
 	return cylindername;
 }
-public String startEngine() {
+public void startEngine() {
 	System.out.println("start Engine by Parent");
-	return cylindername;
+
 }
 public void accelerate() {
 	System.out.println("accelerated by Parent");
