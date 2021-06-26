@@ -6,16 +6,16 @@ public class MyThread extends Thread {
 	 this.res=res;
  }
  public void run() {
- synchronized (res.resource1) {  
-     System.out.println("Thread 1: locked resource 1");  
+ res.resource1();
+ System.out.println("Im holding resourse1"+Thread.currentThread().getId());
+ try {
+	Thread.sleep(5000);
+	//res.resource2();
+} catch (InterruptedException e) {
+	// TODO Auto-generated catch block
+	e.printStackTrace();
+}
+ 
+}
+}
 
-     try { wait();
-     
-     } catch (Exception e) {}  
-
-     synchronized (res.resource2) {  
-      System.out.println("Thread 1: locked resource 2");  
-     }  
-}
-}
-}

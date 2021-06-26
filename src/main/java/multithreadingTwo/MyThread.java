@@ -6,17 +6,12 @@ public class MyThread implements Runnable{
 		this.table=table;
 	}
 public void run() {
+	
+	table.getTable(2);
 		
 		
-		try {
-			Thread.sleep(300);
-			table.getTable(4);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		System.out.println("Max Priority is "+Thread.MAX_PRIORITY);
-		
+	
+	
 		
 	}
 	

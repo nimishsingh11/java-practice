@@ -6,14 +6,15 @@ public class MyThread2 extends Thread {
 		 this.res=res;
 	 }
 	 public void run() {
-	 synchronized (res.resource2) {  
-	     System.out.println("Thread 2: locked resource 2");  
-
-	     try { Thread.sleep(1000);} catch (Exception e) {}  
-
-	     synchronized (res.resource2) {  
-	      System.out.println("Thread 2: locked resource 1");  
-	     }  
-	}
-	}
+	
+		 res.resource1();
+		 System.out.println("Im holding resourse1"+Thread.currentThread().getId());
+		 try {
+			Thread.sleep(5000);
+			//res.resource1();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+}
 }

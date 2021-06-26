@@ -2,13 +2,12 @@ package multithreadingTwo;
 
 public class Tabless {
   
-	public void getTable(int no){
-		synchronized (this) {
-			
+	public  void getTable(int no){
 		
-		for(int i=1;i<11;i++) {
+		
+		for(int i=1;i<5;i++) {
 			System.out.println(no*i +" run by " +Thread.currentThread().getName()  );
-	}
+	
 		
 }
 }
