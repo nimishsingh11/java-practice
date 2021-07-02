@@ -6,7 +6,7 @@ public class MyThread2 extends Thread {
 		 this.buffer=buffer;
 	 }
 	 public void run() {
-		 buffer.addBufferStr(new StringBuffer("hiii"));
-		 System.out.println(buffer.sf + "  "+Thread.currentThread().getId());
+	//	 buffer.addBufferStr(new StringBuffer("hiii"));
+	//	 System.out.println(buffer.sf + "  "+Thread.currentThread().getId());
 	 }
 }
