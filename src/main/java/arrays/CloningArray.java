@@ -11,12 +11,19 @@ public class CloningArray {
 	CloningArray ca=new CloningArray();
 	for(int i=0;i< ca.a.length;i++) {
 		ca.a[i]=3*i;
+		
+	}
+	System.out.println();
+	for(int i=0;i< ca.a.length;i++) {
+		//ca.b[i]=3*i;
+		//System.out.print(ca.b[i]+" ");
 		System.out.print(ca.a[i] + " ");
 	}
 	System.out.println();
 	for(int i=0;i< ca.a.length;i++) {
-		ca.b[i]=3*i;
-		System.out.print(ca.b[i]+" ");
+		//ca.b[i]=3*i;
+		//System.out.print(ca.b[i]+" ");
+		System.out.print(ca.b[i] + " ");
 	}
 	System.out.println();
 	for(int i=0;i<ca.c.length;i++) {

@@ -18,10 +18,12 @@ public static void main(String[] args) {
 	groceryList.forEach((n)->
 		System.out.println(n));
 	
-	}
 	
+	for(String a : groceryList) {
+		System.out.println(a);
+	}
 }
 	
-	
+}	
 	
 

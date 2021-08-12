@@ -10,6 +10,7 @@ public class MainBook {
 	    Book b1=new Book(121,"Let us C","Yashwant Kanetkar","BPB",8);  
 	    Book b2=new Book(233,"Operating System","Galvin","Wiley",6);  
 	    Book b3=new Book(101,"Data Communications & Networking","Forouzan","Mc Graw Hill",4);  
+	    System.out.println(b1.compareTo(b2));
 	    //Adding Books to the queue  
 	    queue.add(b1);  
 	    queue.add(b2);  

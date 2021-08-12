@@ -11,10 +11,10 @@ public class Compare implements Comparable<Compare>{
   }
 	@Override
 	public int compareTo(Compare o) {
-		if(this.age==o.age) {
+		if(this.rollNo==o.rollNo) {
 			return 0;
 		}
-		else if (this.age<o.age) {
+		else if (this.rollNo<o.rollNo) {
 			return 1;
 		}
 		else 

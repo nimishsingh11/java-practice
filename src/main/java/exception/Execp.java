@@ -3,7 +3,7 @@ package exception;
 public class Execp {
 	int a[] = new int[5];
 
-	public int[] m1(int m) throws Exception {
+	public int[] m1(int m)  {
 		if (m > a.length) {
 			throw new ArrayIndexOutOfBoundsException();
 		} else {

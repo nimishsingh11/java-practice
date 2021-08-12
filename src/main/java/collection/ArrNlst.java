@@ -6,7 +6,7 @@ import java.util.List;
 public class ArrNlst {
  public static void main(String[] args) {
 	Integer arr[]= {1,2,32,5,3,5};
-	List<Integer> l=Arrays.asList(arr); //array to string
+	List<Integer> l=Arrays.asList(arr); //array to list
 	//System.out.println(l.size());
 	//System.out.println(l.get(2));
 	//System.out.println(arr.length);

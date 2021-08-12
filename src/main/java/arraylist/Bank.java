@@ -16,17 +16,22 @@ public class Bank {
 		return true;
 	}
 	public boolean addtransaction(String customerName,double amount) {
-		
-		
 		return true;
 	}
 	public boolean findCustomer(String cusName) {
-		for(int i=0;i<customer.size();i++) {
+		/*for(int i=0;i<customer.size();i++) {
 		if(	customer.get(i).customerName == cusName) {
 		 System.out.println("customer name exists");
 		 return true;
+		}*/
+		for(Customer c:customer) {
+		if(c.getCustomerName()==cusName) {
+			System.out.println("customer name exists");
+			 return true;
 		}
 		}
+		System.out.println("customer does not exist.Added new customer");
+		addNewCustomer( cusName,0);
 		return false;
 		
 		
@@ -44,7 +49,7 @@ public class Bank {
 		b1.addNewCustomer("Anil", 1000);
 		b1.addNewCustomer("Peppa", 1000);
 		b1.addNewCustomer("Amit", 10);
-	b1.findCustomer("Anil");
+	b1.findCustomer("bob");
 	
 		// System.out.println(b2.toString());
 		// System.out.println(b3.toString());

@@ -6,13 +6,30 @@ import java.util.ListIterator;
 
 public class Linkedst {
  public static void  printList(LinkedList<String> ll) {
-	 Iterator<String> i= ll.iterator();
-	 while(i.hasNext()) {
-		 System.out.println(i.next());
-	 }
+	for(String a:ll) {
+		System.out.println(a);
+	}
  }
  public static boolean addInOrder(LinkedList<String> ll , String name) {
-	 ListIterator<String> sll=ll.listIterator();
+	 Boolean flag=true;
+	for(String a:ll) {
+		//System.out.println(a.compareTo(name));
+		int b=a.compareTo(name);
+		if(b==0) {
+			System.out.println("The name already exist");
+			flag=false;
+		
+		}
+	}
+	if(flag==true) {
+			ll.add(name);
+			
+			
+	}	
+	
+	 
+	 
+	 /* ListIterator<String> sll=ll.listIterator();
 	 while(sll.hasNext()) {
 		 int comparison=sll.next().compareTo(name);
 		 if(comparison==0) {
@@ -28,8 +45,8 @@ public class Linkedst {
 			
 		 }
 	 }
-	 sll.add(name);
-	return true;
+	 sll.add(name);*/
+	return flag;
  }
  
  
@@ -44,9 +61,9 @@ public class Linkedst {
 	//System.out.println(n));
 	
 	//printList(ll);
-	addInOrder(ll,"tiger");
+	System.out.println(addInOrder(ll,"sumo"));
 	//printList(ll);
-	addInOrder(ll,"zai");
+	System.out.println(addInOrder(ll,"zai"));
 	printList(ll);
 	
 }

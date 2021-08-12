@@ -4,14 +4,29 @@ import java.util.Arrays;
 
 public class PalindromeString {
 public static void main(String[] args) {
-	String str="abccba";
-	for(int i=0;i<str.length();i++) {
-		if(str.indexOf(i)!=str.indexOf(str.length()-i)) {
-		System.out.println("not a palindrome");
+	String str="455";
+	Integer l=str.length();
+	int flag=1;
+   if(l%2 == 0)	{
+	for(int i=0;i<l/2;i++) {
+		if(str.charAt(i)!=str.charAt(l-i-1)) {
+			flag=1;
+			break;
 		}
 	}
-//	System.out.println("is  a palindrome");
-
+	flag=0;
+   }
+  
+   if(flag==0) {
+	   System.out.println("is a palindrome");  
+   }
+   else {
+	   System.out.println("not a palindrome");
+   }
+   
+   
+   
+   
 	//sorting of string
 	String str2="nimish";
 	char[] m=str2.toCharArray(); //changing to char array
